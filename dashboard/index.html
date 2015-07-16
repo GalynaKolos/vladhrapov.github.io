@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav class="left-side">
+    <h1 class="main-title">
+        PrasastiEnom.
+    </h1>
+    <ul class="menu">
+        <li class="menu__item menu__item_active">
+            <span class="ico ico_home"></span>
+            <span class="item-text">Dashboard</span>
+            <span class="circle circle_active">16</span>
+            <ul class="submenu submenu_active">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+        <li class="menu__item">
+            <span class="ico ico_mail"></span>
+            <span class="item-text">Webmail Service</span>
+            <span class="circle">95</span>
+            <ul class="submenu">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+        <li class="menu__item">
+            <span class="ico ico_cloud"></span>
+            <span class="item-text">Cloud Storage</span>
+            <span class="circle">7</span>
+            <ul class="submenu">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+        <li class="menu__item">
+            <span class="ico ico_ui"></span>
+            <span class="item-text">UI Elements</span>
+            <span class="circle">7</span>
+            <ul class="submenu">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+        <li class="menu__item">
+            <span class="ico ico_statistics"></span>
+            <span class="item-text">Statistic Charts</span>
+            <span class="circle">6</span>
+            <ul class="submenu">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+        <li class="menu__item">
+            <span class="ico ico_time"></span>
+            <span class="item-text">Freelance Time Manager</span>
+            <span class="circle">24</span>
+            <ul class="submenu">
+                <li class="submenu__item">View site</li>
+                <li class="submenu__item">General settings</li>
+                <li class="submenu__item">Help</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+        <div class="right-side">
+    <header class="header">
+    <div class="hamburger">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+    </div>
+    <ul class="header-menu">
+        <li class="header-menu__item">Activity</li>
+        <li class="header-menu__item">Notifications <span class="circle circle_active circle-header">16</span> </li>
+    </ul>
+    <div class="user-section">
+        <div class="user">
+            <img class="user__photo" src="img/small-photo.png" alt="img" height="40" width="40"/>
+            <span class="user__name">Harold Crawford</span>
+            <span class="down"></span>
+        </div>
+    </div>
+</header>
+    <div class="account-wrapper">
+    <ul class="account">
+        <li class="account__item account__item_1">
+            <div class="account-logo account-logo-user"></div>
+            <p class="account-text">Visitors info</p>
+        </li>
+        <li class="account__item account__item_2">
+            <div class="account-logo account-logo-upload"></div>
+            <p class="account-text">Upload stuff</p>
+        </li>
+        <li class="account__item account__item_3">
+            <div class="account-logo account-logo-webmail"></div>
+            <p class="account-text">Webmail inbox</p>
+        </li>
+        <li class="account__item account__item_4">
+            <div class="account-logo account-logo-task"></div>
+            <p class="account-text">Freelance task</p>
+        </li>
+        <li class="account__item account__item_5">
+            <div class="account-logo account-logo-logout"></div>
+            <p class="account-text">Logout account</p>
+        </li>
+    </ul>
+</div>
+    <div class="charts-wrapper">
+    <ul class="charts">
+        <li class="charts__item scatterplot">
+            <p class="charts-header">
+                Quick statistics
+            </p>
+            <div class="scatterplot-graph">
+                <ul class="details">
+                    <li class="details__item">
+                        <span class="rectangle rectangle_red"></span>
+                        Lorem ipsum dolor
+                    </li>
+                    <li class="details__item">
+                        <span class="rectangle rectangle_blue"></span>
+                        Lorem ipsum dolor 2
+                    </li>
+                </ul>
+                <div class="canvas-wrapper">
+                    <canvas id="canvas" class="canvas"></canvas>
+                </div>
+            </div>
+        </li>
+        <li class="charts__item rounded">
+            <p class="charts-header">
+                Cloud storage usage
+            </p>
+            <div class="rounded-graph">
+                <div class="canvas-wrapper">
+                    <div class="used">140 / 512 <br/> GB</div>
+                    <div class="storage-use"></div>
+                    <div class="storage-use storage-use-text">Storage use</div>
+                    <div class="free-space free-space-text">Free space</div>
+                    <div class="free-space"></div>
+                    <canvas id="canvas2" class="canvas2"></canvas>
+                </div>
+            </div>
+            <p class="charts-footer">
+                Show my files
+                <img class="arrow-right" src="./img/arrow-left.png" alt="img" height="20" width="14"/>
+            </p>
+        </li>
+    </ul>
+</div>
+    <div class="widget-wrapper">
+    <div class="widget">
+        <div class="widget__header">
+            <img class="todo-img-add" src="img/add.png" alt="img" height="40" width="40"/>
+            Todo list
+        </div>
+        <input type="text"/>
+        <ul class="todo-list">
+            <li class="todo-list__item">
+                <input id="1" type="checkbox" checked/>
+                <label class="todo-text" for="1">
+                    <span class="todo-img" ></span>
+                    Lorem ipsum dolor sit amet lorem ipsum lorem.
+                </label>
+            </li>
+            <li class="todo-list__item">
+                <input id="2" type="checkbox"/>
+                <label class="todo-text" for="2">
+                    <span class="todo-img"></span>
+                    Lorem ipsum dolor sit amet.
+                </label>
+
+            </li>
+            <li class="todo-list__item">
+                <input id="3" type="checkbox"/>
+                <label class="todo-text" for="3">
+                    <span class="todo-img"></span>
+                    Lorem ipsum dolor sit amet sit amet lorem lorem.
+                </label>
+            </li>
+            <li class="todo-list__item">
+                <input id="4" type="checkbox"/>
+                <label class="todo-text" for="4">
+                    <span class="todo-img"></span>
+                    Lorem ipsum dolor sit amet.
+                </label>
+            </li>
+            <li class="todo-list__item">
+                <input id="5" type="checkbox"/>
+                <label class="todo-text" for="5">
+                    <span class="todo-img"></span>
+                    Lorem ipsum dolor sit amet lorem sit amet sit amet lorem.
+                </label>
+            </li>
+        </ul>
+    </div>
+    <div class="widget forecast">
+        <p class="forecast__header">Forecast</p>
+        <img class="forecast__image" src="img/weather.png" alt="img" width="180" height="180"/>
+        <p class="forecast__text">
+            <span class="forecast__text_left">Cloudy</span>
+            <span class="forecast__text_right">32&degC</span>
+        </p>
+        <p class="forecast__footer">
+            Surabaya, Indonesia
+            <img class="forecast__footer-img" src="img/weather.png" alt="img" height="30" width="30"/>
+        </p>
+    </div>
+    <div class="widget">
+        <p class="widget__quote">"Art is the only way to run away without leaving home."</p>
+        <p class="widget__author">-Twyla Tharp-</p>
+    </div>
+</div>
+    <div class="notes-wrapper">
+    <div class="current-user">
+        <div class="a" >
+        <p class="current-user__img">
+            <img class="todo-img-add " src="img/add.png" alt="img" height="40" width="40"/>
+        </p>
+        <p class="current-user__name">
+            Keith Gardner
+        </p>
+        <p class="current-user__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Autem commodi consequatur cupiditate delectus.
+        </p>
+        <div class="bg-template"></div>
+        <div class="hexagon current-user__photo">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+        </div>
+        </div>
+        <!--<div class="hexagon">-->
+            <!--<img class="current-user__photo" src="img/test.png" alt="img" height="100" width="100"/>-->
+        <!--</div>-->
+        <ul class="stats">
+            <li class="stats__followers">
+                Followers
+                <br/>
+                9.882
+            </li>
+            <li class="stats__followers">
+                Following
+                <br/>
+                1397
+            </li>
+            <li class="stats__followers">
+                Notes
+                <br/>
+                17.200
+            </li>
+        </ul>
+    </div>
+    <div class="quick-notes">
+        <div class="widget__header">
+            Quick notes
+        </div>
+        <form class="form" action="/some/route">
+            <input type="text" placeholder="Note title"/>
+            <textarea cols="25" rows="11" placeholder="Your note here"></textarea>
+            <input class="submit" type="submit"/>
+        </form>
+
+
+    </div>
+</div>
+
+<div class="panel">
+    <span class="hex"></span>
+    <span class="hex"></span>
+    <span class="hex"></span>
+</div>
+</div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/chart.min.js"></script>
+</body>
+</html>
